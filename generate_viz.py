@@ -289,6 +289,50 @@ def main():
     print("Bar chart visualization generation complete!")
     print("=" * 60)
 
+    # Generate compact versions for profile README (side by side)
+    print("\nGenerating compact versions for profile...")
+    compact_chart = BarChartSVG(width=350, height=250)
+
+    # Compact recovery score
+    if recovery_data_list:
+        svg = compact_chart.generate_chart(
+            "Recovery",
+            recovery_data_list[-5:],  # Last 5 days only
+            "",
+            "#06d6a0"
+        )
+        with open('recovery_compact.svg', 'w') as f:
+            f.write(svg)
+        print("  ✓ recovery_compact.svg")
+
+    # Compact strain score
+    if strain_data_list:
+        svg = compact_chart.generate_chart(
+            "Strain",
+            strain_data_list[-5:],
+            "",
+            "#ff6b6b"
+        )
+        with open('strain_compact.svg', 'w') as f:
+            f.write(svg)
+        print("  ✓ strain_compact.svg")
+
+    # Compact sleep performance
+    if sleep_performance_data:
+        svg = compact_chart.generate_chart(
+            "Sleep Quality",
+            sleep_performance_data[-5:],
+            "%",
+            "#4cc9f0"
+        )
+        with open('sleep_performance_compact.svg', 'w') as f:
+            f.write(svg)
+        print("  ✓ sleep_performance_compact.svg")
+
+    print("\n" + "=" * 60)
+    print("All visualizations complete!")
+    print("=" * 60)
+
 
 if __name__ == '__main__':
     main()
