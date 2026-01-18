@@ -340,6 +340,11 @@ def main():
     print("All visualizations complete!")
     print("=" * 60)
 
+    # Generate profile-specific visualizations using SVG rectangles
+    print("\nGenerating profile visualizations (SVG rectangles)...")
+    import subprocess
+    subprocess.run(["python3", "generate_profile_viz.py"])
+
 
 if __name__ == '__main__':
     main()

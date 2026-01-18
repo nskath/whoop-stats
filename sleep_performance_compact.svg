@@ -17,10 +17,14 @@
           font-size="14" fill="#4cc9f0" font-weight="bold" text-anchor="end">
         72%
     </text>
-    <text x="130" y="70" font-family="'SF Mono', 'Courier New', monospace"
-          font-size="16" fill="#4cc9f0" letter-spacing="2">
-        ██████████████▍░░░░░
-    </text>
+
+    <!-- Bar background -->
+    <rect x="130" y="58" width="130" height="16"
+          fill="#1a1a1a" rx="2"/>
+
+    <!-- Bar filled portion -->
+    <rect x="130" y="58" width="93.6" height="16"
+          fill="#4cc9f0" rx="2"/>
 
     <!-- Data row -->
     <text x="30" y="105" font-family="'SF Mono', 'Courier New', monospace"
@@ -31,10 +35,14 @@
           font-size="14" fill="#4cc9f0" font-weight="bold" text-anchor="end">
         76%
     </text>
-    <text x="130" y="105" font-family="'SF Mono', 'Courier New', monospace"
-          font-size="16" fill="#4cc9f0" letter-spacing="2">
-        ███████████████▏░░░░
-    </text>
+
+    <!-- Bar background -->
+    <rect x="130" y="93" width="130" height="16"
+          fill="#1a1a1a" rx="2"/>
+
+    <!-- Bar filled portion -->
+    <rect x="130" y="93" width="98.8" height="16"
+          fill="#4cc9f0" rx="2"/>
 
     <!-- Data row -->
     <text x="30" y="140" font-family="'SF Mono', 'Courier New', monospace"
@@ -45,10 +53,14 @@
           font-size="14" fill="#4cc9f0" font-weight="bold" text-anchor="end">
         83%
     </text>
-    <text x="130" y="140" font-family="'SF Mono', 'Courier New', monospace"
-          font-size="16" fill="#4cc9f0" letter-spacing="2">
-        ████████████████▌░░░
-    </text>
+
+    <!-- Bar background -->
+    <rect x="130" y="128" width="130" height="16"
+          fill="#1a1a1a" rx="2"/>
+
+    <!-- Bar filled portion -->
+    <rect x="130" y="128" width="107.9" height="16"
+          fill="#4cc9f0" rx="2"/>
 
     <!-- Data row -->
     <text x="30" y="175" font-family="'SF Mono', 'Courier New', monospace"
@@ -59,10 +71,14 @@
           font-size="14" fill="#4cc9f0" font-weight="bold" text-anchor="end">
         74%
     </text>
-    <text x="130" y="175" font-family="'SF Mono', 'Courier New', monospace"
-          font-size="16" fill="#4cc9f0" letter-spacing="2">
-        ██████████████▊░░░░░
-    </text>
+
+    <!-- Bar background -->
+    <rect x="130" y="163" width="130" height="16"
+          fill="#1a1a1a" rx="2"/>
+
+    <!-- Bar filled portion -->
+    <rect x="130" y="163" width="96.2" height="16"
+          fill="#4cc9f0" rx="2"/>
 
     <!-- Data row -->
     <text x="30" y="210" font-family="'SF Mono', 'Courier New', monospace"
@@ -73,10 +89,14 @@
           font-size="14" fill="#4cc9f0" font-weight="bold" text-anchor="end">
         79%
     </text>
-    <text x="130" y="210" font-family="'SF Mono', 'Courier New', monospace"
-          font-size="16" fill="#4cc9f0" letter-spacing="2">
-        ███████████████▊░░░░
-    </text>
+
+    <!-- Bar background -->
+    <rect x="130" y="198" width="130" height="16"
+          fill="#1a1a1a" rx="2"/>
+
+    <!-- Bar filled portion -->
+    <rect x="130" y="198" width="102.7" height="16"
+          fill="#4cc9f0" rx="2"/>
 
     <!-- Stats -->
     <text x="230" y="255"
