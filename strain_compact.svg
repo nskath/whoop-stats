@@ -1,6 +1,6 @@
-<svg width="280" height="285" xmlns="http://www.w3.org/2000/svg">
+<svg width="260" height="285" xmlns="http://www.w3.org/2000/svg">
     <!-- Background -->
-    <rect width="280" height="285" fill="#0d1117" rx="6"/>
+    <rect width="260" height="285" fill="#0d1117" rx="6"/>
 
     <!-- Title -->
     <text x="20" y="40" font-family="'SF Mono', 'Courier New', monospace"
@@ -79,7 +79,7 @@
     </text>
 
     <!-- Stats -->
-    <text x="250" y="255"
+    <text x="230" y="255"
           font-family="'SF Mono', 'Courier New', monospace" font-size="12" fill="#58a6ff" text-anchor="end">
         Avg: 14.0 • Last 5 days
     </text>

@@ -251,7 +251,8 @@ def main():
             "Recovery Score",
             recovery_data_list,
             "",
-            "#06d6a0"
+            "#06d6a0",
+            max_scale=100  # Recovery is 0-100
         )
         with open('recovery_score.svg', 'w') as f:
             f.write(svg)
@@ -265,7 +266,8 @@ def main():
             "Strain Score",
             strain_data_list,
             "",
-            "#ff6b6b"
+            "#ff6b6b",
+            max_scale=21  # Strain is 0-21
         )
         with open('strain_score.svg', 'w') as f:
             f.write(svg)
@@ -279,7 +281,8 @@ def main():
             "Sleep Performance",
             sleep_performance_data,
             "%",
-            "#4cc9f0"
+            "#4cc9f0",
+            max_scale=100  # Performance is 0-100%
         )
         with open('sleep_performance.svg', 'w') as f:
             f.write(svg)
@@ -292,7 +295,7 @@ def main():
 
     # Generate compact versions for profile README (side by side)
     print("\nGenerating compact versions for profile...")
-    compact_chart = BarChartSVG(width=280, height=250)
+    compact_chart = BarChartSVG(width=260, height=250)
 
     # Compact recovery score (scale 0-100)
     if recovery_data_list:
