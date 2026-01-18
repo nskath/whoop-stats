@@ -53,7 +53,7 @@ class BarChartSVG:
 
         return bar
 
-    def generate_chart(self, title: str, data: List[Tuple[str, float]], unit: str, color: str) -> str:
+    def generate_chart(self, title: str, data: List[Tuple[str, float]], unit: str, color: str, max_scale: float = None) -> str:
         """Generate horizontal bar chart SVG"""
         # Calculate height based on number of items
         num_items = min(len(data), 7)  # Show last 7 days
@@ -77,7 +77,8 @@ class BarChartSVG:
 
         # Show last 7 items
         display_data = data[-7:]
-        max_value = max(item[1] for item in display_data) if display_data else 1
+        # Use provided max_scale for consistent scaling, or calculate from data
+        max_value = max_scale if max_scale else max(item[1] for item in display_data) if display_data else 1
 
         y_offset = self.padding + 50
 
@@ -291,39 +292,42 @@ def main():
 
     # Generate compact versions for profile README (side by side)
     print("\nGenerating compact versions for profile...")
-    compact_chart = BarChartSVG(width=350, height=250)
+    compact_chart = BarChartSVG(width=280, height=250)
 
-    # Compact recovery score
+    # Compact recovery score (scale 0-100)
     if recovery_data_list:
         svg = compact_chart.generate_chart(
             "Recovery",
             recovery_data_list[-5:],  # Last 5 days only
             "",
-            "#06d6a0"
+            "#06d6a0",
+            max_scale=100  # Recovery is 0-100
         )
         with open('recovery_compact.svg', 'w') as f:
             f.write(svg)
         print("  ✓ recovery_compact.svg")
 
-    # Compact strain score
+    # Compact strain score (scale 0-21)
     if strain_data_list:
         svg = compact_chart.generate_chart(
             "Strain",
             strain_data_list[-5:],
             "",
-            "#ff6b6b"
+            "#ff6b6b",
+            max_scale=21  # Strain is 0-21
         )
         with open('strain_compact.svg', 'w') as f:
             f.write(svg)
         print("  ✓ strain_compact.svg")
 
-    # Compact sleep performance
+    # Compact sleep performance (scale 0-100%)
     if sleep_performance_data:
         svg = compact_chart.generate_chart(
             "Sleep Quality",
             sleep_performance_data[-5:],
             "%",
-            "#4cc9f0"
+            "#4cc9f0",
+            max_scale=100  # Performance is 0-100%
         )
         with open('sleep_performance_compact.svg', 'w') as f:
             f.write(svg)
