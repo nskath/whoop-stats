@@ -1,0 +1,53 @@
+name: Update Whoop Data
+
+on:
+  schedule:
+    # Run every day at 9 AM UTC
+    - cron: '0 9 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Fetch Whoop data
+        env:
+          WHOOP_CLIENT_ID: ${{ secrets.WHOOP_CLIENT_ID }}
+          WHOOP_CLIENT_SECRET: ${{ secrets.WHOOP_CLIENT_SECRET }}
+          WHOOP_REFRESH_TOKEN: ${{ secrets.WHOOP_REFRESH_TOKEN }}
+        run: |
+          # Create tokens.json from secrets
+          cat > tokens.json << EOF
+          {
+            "access_token": "",
+            "refresh_token": "${{ secrets.WHOOP_REFRESH_TOKEN }}",
+            "expires_in": 0
+          }
+          EOF
+
+          # Fetch data
+          python whoop_data.py
+
+      - name: Generate visualizations
+        run: |
+          python generate_viz.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add -A
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update Whoop data [skip ci]" && git push)

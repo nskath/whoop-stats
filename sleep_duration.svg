@@ -1,0 +1,74 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:0.3" />
+            <stop offset="100%" style="stop-color:#00D9FF;stop-opacity:0.05" />
+        </linearGradient>
+    </defs>
+
+    <!-- Background -->
+    <rect width="800" height="200" fill="#0D1117" rx="6"/>
+
+    <!-- Title -->
+    <text x="40" y="25" font-family="'SF Mono', 'Monaco', monospace" font-size="16" font-weight="bold" fill="#C9D1D9">
+        Sleep Duration (hours)
+    </text>
+
+    <line x1="40" y1="40.0" x2="760" y2="40.0"
+          stroke="#30363D" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="35" y="44.0" font-family="'SF Mono', 'Monaco', monospace"
+          font-size="10" fill="#8B949E" text-anchor="end">11</text>
+
+    <line x1="40" y1="70.0" x2="760" y2="70.0"
+          stroke="#30363D" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="35" y="74.0" font-family="'SF Mono', 'Monaco', monospace"
+          font-size="10" fill="#8B949E" text-anchor="end">8</text>
+
+    <line x1="40" y1="100.0" x2="760" y2="100.0"
+          stroke="#30363D" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="35" y="104.0" font-family="'SF Mono', 'Monaco', monospace"
+          font-size="10" fill="#8B949E" text-anchor="end">5</text>
+
+    <line x1="40" y1="130.0" x2="760" y2="130.0"
+          stroke="#30363D" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="35" y="134.0" font-family="'SF Mono', 'Monaco', monospace"
+          font-size="10" fill="#8B949E" text-anchor="end">3</text>
+
+    <line x1="40" y1="160.0" x2="760" y2="160.0"
+          stroke="#30363D" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="35" y="164.0" font-family="'SF Mono', 'Monaco', monospace"
+          font-size="10" fill="#8B949E" text-anchor="end">0</text>
+
+    <!-- Line -->
+    <path d="M 40.0,54.48163373858279 L 70.0,78.08709054317397 L 100.0,155.77141652623305 L 130.0,86.15245613357055 L 160.0,87.73310791327968 L 190.0,50.068764702083186 L 220.0,61.72292959955 L 250.0,40.0 L 280.0,54.78217075396144 L 310.0,82.56287176433126 L 340.0,115.04709811020491 L 370.0,160.0 L 400.0,86.42127248721097 L 430.0,51.75683512043052 L 460.0,68.79281560904181 L 490.0,82.01845017142108 L 520.0,61.08392011975138 L 550.0,84.468743329025 L 580.0,80.31974164191948 L 610.0,88.10105652248758 L 640.0,40.245949256451894 L 670.0,65.2295325516777 L 700.0,53.75711127555917 L 730.0,91.83719159399004 L 760.0,65.27476873304887" stroke="#9D4EDD" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Area under line -->
+    <path d="M 40.0,54.48163373858279 L 70.0,78.08709054317397 L 100.0,155.77141652623305 L 130.0,86.15245613357055 L 160.0,87.73310791327968 L 190.0,50.068764702083186 L 220.0,61.72292959955 L 250.0,40.0 L 280.0,54.78217075396144 L 310.0,82.56287176433126 L 340.0,115.04709811020491 L 370.0,160.0 L 400.0,86.42127248721097 L 430.0,51.75683512043052 L 460.0,68.79281560904181 L 490.0,82.01845017142108 L 520.0,61.08392011975138 L 550.0,84.468743329025 L 580.0,80.31974164191948 L 610.0,88.10105652248758 L 640.0,40.245949256451894 L 670.0,65.2295325516777 L 700.0,53.75711127555917 L 730.0,91.83719159399004 L 760.0,65.27476873304887 L 760.0,160 L 40.0,160 Z"
+          fill="url(#gradient)" opacity="0.3"/>
+
+    <circle cx="40.0" cy="54.48163373858279" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="70.0" cy="78.08709054317397" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="100.0" cy="155.77141652623305" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="130.0" cy="86.15245613357055" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="160.0" cy="87.73310791327968" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="190.0" cy="50.068764702083186" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="220.0" cy="61.72292959955" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="250.0" cy="40.0" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="280.0" cy="54.78217075396144" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="310.0" cy="82.56287176433126" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="340.0" cy="115.04709811020491" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="370.0" cy="160.0" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="400.0" cy="86.42127248721097" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="430.0" cy="51.75683512043052" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="460.0" cy="68.79281560904181" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="490.0" cy="82.01845017142108" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="520.0" cy="61.08392011975138" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="550.0" cy="84.468743329025" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="580.0" cy="80.31974164191948" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="610.0" cy="88.10105652248758" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="640.0" cy="40.245949256451894" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="670.0" cy="65.2295325516777" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="700.0" cy="53.75711127555917" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="730.0" cy="91.83719159399004" r="3" fill="#9D4EDD" opacity="0.8"/>
+    <circle cx="760.0" cy="65.27476873304887" r="3" fill="#9D4EDD" opacity="0.8"/>
+</svg>

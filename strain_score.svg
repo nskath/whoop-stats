@@ -1,0 +1,74 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:0.3" />
+            <stop offset="100%" style="stop-color:#00D9FF;stop-opacity:0.05" />
+        </linearGradient>
+    </defs>
+
+    <!-- Background -->
+    <rect width="800" height="200" fill="#0D1117" rx="6"/>
+
+    <!-- Title -->
+    <text x="40" y="25" font-family="'SF Mono', 'Monaco', monospace" font-size="16" font-weight="bold" fill="#C9D1D9">
+        Strain Score
+    </text>
+
+    <line x1="40" y1="40.0" x2="760" y2="40.0"
+          stroke="#30363D" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="35" y="44.0" font-family="'SF Mono', 'Monaco', monospace"
+          font-size="10" fill="#8B949E" text-anchor="end">18</text>
+
+    <line x1="40" y1="70.0" x2="760" y2="70.0"
+          stroke="#30363D" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="35" y="74.0" font-family="'SF Mono', 'Monaco', monospace"
+          font-size="10" fill="#8B949E" text-anchor="end">13</text>
+
+    <line x1="40" y1="100.0" x2="760" y2="100.0"
+          stroke="#30363D" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="35" y="104.0" font-family="'SF Mono', 'Monaco', monospace"
+          font-size="10" fill="#8B949E" text-anchor="end">9</text>
+
+    <line x1="40" y1="130.0" x2="760" y2="130.0"
+          stroke="#30363D" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="35" y="134.0" font-family="'SF Mono', 'Monaco', monospace"
+          font-size="10" fill="#8B949E" text-anchor="end">4</text>
+
+    <line x1="40" y1="160.0" x2="760" y2="160.0"
+          stroke="#30363D" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="35" y="164.0" font-family="'SF Mono', 'Monaco', monospace"
+          font-size="10" fill="#8B949E" text-anchor="end">0</text>
+
+    <!-- Line -->
+    <path d="M 40.0,100.39687572117626 L 70.0,76.10164042949619 L 100.0,89.1705770143241 L 130.0,128.34576620771878 L 160.0,40.2660647298589 L 190.0,110.72309787010235 L 220.0,56.54561830700378 L 250.0,83.39214788799718 L 280.0,160.0 L 310.0,158.74208551212405 L 340.0,126.53091224443446 L 370.0,116.10601924406305 L 400.0,131.57445699891153 L 430.0,131.49632268176467 L 460.0,116.55506143756921 L 490.0,62.93372729803103 L 520.0,112.10422187769662 L 550.0,110.52268135444973 L 580.0,123.72105134440815 L 610.0,43.23411086998904 L 640.0,52.63102307021906 L 670.0,47.571382948670134 L 700.0,51.82760114938256 L 730.0,40.0 L 760.0,132.64271880797276" stroke="#FF6B6B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Area under line -->
+    <path d="M 40.0,100.39687572117626 L 70.0,76.10164042949619 L 100.0,89.1705770143241 L 130.0,128.34576620771878 L 160.0,40.2660647298589 L 190.0,110.72309787010235 L 220.0,56.54561830700378 L 250.0,83.39214788799718 L 280.0,160.0 L 310.0,158.74208551212405 L 340.0,126.53091224443446 L 370.0,116.10601924406305 L 400.0,131.57445699891153 L 430.0,131.49632268176467 L 460.0,116.55506143756921 L 490.0,62.93372729803103 L 520.0,112.10422187769662 L 550.0,110.52268135444973 L 580.0,123.72105134440815 L 610.0,43.23411086998904 L 640.0,52.63102307021906 L 670.0,47.571382948670134 L 700.0,51.82760114938256 L 730.0,40.0 L 760.0,132.64271880797276 L 760.0,160 L 40.0,160 Z"
+          fill="url(#gradient)" opacity="0.3"/>
+
+    <circle cx="40.0" cy="100.39687572117626" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="70.0" cy="76.10164042949619" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="100.0" cy="89.1705770143241" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="130.0" cy="128.34576620771878" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="160.0" cy="40.2660647298589" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="190.0" cy="110.72309787010235" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="220.0" cy="56.54561830700378" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="250.0" cy="83.39214788799718" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="280.0" cy="160.0" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="310.0" cy="158.74208551212405" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="340.0" cy="126.53091224443446" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="370.0" cy="116.10601924406305" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="400.0" cy="131.57445699891153" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="430.0" cy="131.49632268176467" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="460.0" cy="116.55506143756921" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="490.0" cy="62.93372729803103" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="520.0" cy="112.10422187769662" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="550.0" cy="110.52268135444973" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="580.0" cy="123.72105134440815" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="610.0" cy="43.23411086998904" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="640.0" cy="52.63102307021906" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="670.0" cy="47.571382948670134" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="700.0" cy="51.82760114938256" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="730.0" cy="40.0" r="3" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="760.0" cy="132.64271880797276" r="3" fill="#FF6B6B" opacity="0.8"/>
+</svg>
