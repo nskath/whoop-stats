@@ -15,6 +15,7 @@ load_dotenv()
 
 CLIENT_ID = os.getenv('WHOOP_CLIENT_ID')
 CLIENT_SECRET = os.getenv('WHOOP_CLIENT_SECRET')
+REDIRECT_URI = os.getenv('REDIRECT_URI')
 
 # Whoop API base URL (using v2)
 API_BASE = 'https://api.prod.whoop.com/developer/v2'
@@ -48,7 +49,8 @@ class WhoopClient:
             'grant_type': 'refresh_token',
             'refresh_token': self.tokens['refresh_token'],
             'client_id': CLIENT_ID,
-            'client_secret': CLIENT_SECRET
+            'client_secret': CLIENT_SECRET,
+            'redirect_uri': REDIRECT_URI
         }
 
         response = requests.post(TOKEN_URL, data=data)
