@@ -30,6 +30,7 @@ jobs:
           WHOOP_CLIENT_ID: ${{ secrets.WHOOP_CLIENT_ID }}
           WHOOP_CLIENT_SECRET: ${{ secrets.WHOOP_CLIENT_SECRET }}
           WHOOP_REFRESH_TOKEN: ${{ secrets.WHOOP_REFRESH_TOKEN }}
+          REDIRECT_URI: ${{ secrets.REDIRECT_URI }}
         run: |
           # Create tokens.json from secrets
           cat > tokens.json << EOF
